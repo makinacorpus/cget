@@ -3,12 +3,12 @@
 function makeAlert(){
 	var mydata = JSON.parse(solidarum);
 	document.getElementById("data").innerHTML = "COUCOU!";
-	alert("COUCOU");
+	window.alert("COUCOU");
 	alert(mydata[0].title);
 }
-
+makeAlert();
 </script>
 
 <div>Hello</div>
 <div id="data"></div>
-<button onclick="makeAlert()">My Button</button>
+<button onclick="makeAlert">My Button</button>
