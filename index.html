@@ -1,5 +1,6 @@
 <script type="text/javascript" src="solidarum.json" ></script>
-<script type="text/javascript">
+<script>
+
 function makeAlert(){
 	var mydata = JSON.parse(solidarum);
 	document.getElementById("data").innerHTML = "COUCOU!";
@@ -9,8 +10,11 @@ function makeAlert(){
 }
 makeAlert();
 console.log("PLEASE 2");
+
 </script>
 
-<div>Hello</div>
-<div id="data"></div>
-<button onclick="makeAlert">My Button</button>
+<body>
+	<div>Hello</div>
+	<div id="data"></div>
+	<button onclick="makeAlert">My Button</button>
+</body>
