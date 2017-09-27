@@ -1,5 +1,7 @@
 td {  
-    text-align: center;
+    text-align: center;    
+  	width: 200px;
+ 	table-layout: fixed;  
 }
 
 img {
