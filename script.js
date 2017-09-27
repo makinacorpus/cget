@@ -12,6 +12,7 @@ function loadJSON(callback) {
  }
 
 var actual_JSON;
+init();
 
  function init() {
  loadJSON(function(response) {
