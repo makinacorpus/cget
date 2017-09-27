@@ -29,7 +29,7 @@ function showData(actual_JSON){
     finalResult += "<tr>";
     my_obj = actual_JSON[0];
     for (var key in my_obj){
-        finalResult += "<th>" + key + "</th>"; 
+        finalResult += "<th style='width:20%;'>" + key + "</th>"; 
     }
     finalResult += "</tr>";
 
