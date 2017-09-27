@@ -1,6 +1,3 @@
-
-var actual_JSON;
-
 function loadJSON(callback) {   
 
     var xobj = new XMLHttpRequest();
@@ -13,6 +10,8 @@ function loadJSON(callback) {
     };
     xobj.send(null);  
  }
+
+var actual_JSON;
 
  function init() {
  loadJSON(function(response) {
