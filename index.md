@@ -2,6 +2,7 @@
 <head>
 <meta charset="utf-8"/>
 <script src="script.js"></script>
+<link rel="stylesheet" href="style.css" />
 	<title>CGET data page</title>
 </head>
 <body>
