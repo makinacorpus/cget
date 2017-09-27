@@ -23,7 +23,7 @@ function loadJSON(callback, fileName) {
 
 function showData(actual_JSON){
     console.log(actual_JSON);
-    var finalResult = "<table style='width:100%;'>";
+    var finalResult = "<table>";
     
     // creating the table header
     finalResult += "<tr>";
