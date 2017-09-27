@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<title></title>
-</head>
-<body>
-	<div>Hello</div>
-	<div id="data"></div>
-	<button onclick="makeInner()">test innerHTML</button>
-	<button onclick="init()">init</button>
-	<button onclick="useJSON()">use JSON</button>
-</body>
-
 <script type="text/javascript">
 
  function loadJSON(callback) {   
@@ -49,4 +35,3 @@ function makeInner(){
 }
 
 </script>
-</html>
