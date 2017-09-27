@@ -48,6 +48,9 @@ function showData(actual_JSON){
             if (key == "title"){
                 data = "<h3>" + data + "</h3>";
             }
+            if (key == "link"){
+                data = "<a src='" + data + "'>" + data + "</a>";
+            }
             myResult += "<td>" + data + "</td>";
         }
         myResult += "</tr>";
