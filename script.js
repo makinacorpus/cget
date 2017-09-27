@@ -25,7 +25,7 @@ function showData(actual_JSON){
     console.log(actual_JSON);
     var finalResult = "<table style='width:100%;'>";
     
-    //creating the table header
+    // creating the table header
     finalResult += "<tr>";
     my_obj = actual_JSON[0];
     for (var key in my_obj){
@@ -33,19 +33,24 @@ function showData(actual_JSON){
     }
     finalResult += "</tr>";
 
-
+    // feeling the table with data
     for (var i in actual_JSON){
         if(i>=10){break;}
-        console.log(i);
         obj = actual_JSON[i]
         var myResult = "";
         myResult += "<tr>";
         
         for (var key in obj){
-            myResult += "<td>" + obj[key] + "</td>";
+            var data = obj[key];
+            if (key == "img"){
+                data = "<img src='" + data + "'></img>";
+            }
+            if (key == "title"){
+                data = "<h3>" + data + "</h3>";
+            }
+            myResult += "<td>" + data + "</td>";
         }
         myResult += "</tr>";
-        console.log(myResult);
         finalResult += myResult;
         
     }
