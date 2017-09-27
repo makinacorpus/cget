@@ -1,8 +1,8 @@
-function loadJSON(callback) {   
+function loadJSON(callback, fileName) {   
 
     var xobj = new XMLHttpRequest();
         xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'solidarum.json', true); 
+    xobj.open('GET', fileName.concat('.json'), true); 
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == "200") {
             callback(xobj.responseText);
@@ -11,20 +11,44 @@ function loadJSON(callback) {
     xobj.send(null);  
  }
 
-var actual_JSON;
-init();
 
- function init() {
- loadJSON(function(response) {
-    actual_JSON = JSON.parse(response);
-    console.log(actual_JSON[0].title);
- });
+ function init(fileName) {
+    loadJSON(function(response) {
+         var actual_JSON = {"not":"defined"}
+        actual_JSON = JSON.parse(response);
+        showData(actual_JSON)
+        },
+        fileName);
 }
 
-function useJSON(){
-	document.getElementById("data").innerHTML = actual_JSON[1].title;
-}
+function showData(actual_JSON){
+    console.log(actual_JSON);
+    var finalResult = "<table style='width:100%;'>";
+    
+    //creating the table header
+    finalResult += "<tr>";
+    my_obj = actual_JSON[0];
+    for (var key in my_obj){
+        finalResult += "<th>" + key + "</th>"; 
+    }
+    finalResult += "</tr>";
 
-function makeInner(){
-	document.getElementById("data").innerHTML = "COUCOU from makeInner!";
+
+    for (var i in actual_JSON){
+        if(i>=10){break;}
+        console.log(i);
+        obj = actual_JSON[i]
+        var myResult = "";
+        myResult += "<tr>";
+        
+        for (var key in obj){
+            myResult += "<td>" + obj[key] + "</td>";
+        }
+        myResult += "</tr>";
+        console.log(myResult);
+        finalResult += myResult;
+        
+    }
+    finalResult += "</table>";
+    document.getElementById("data").innerHTML = finalResult;
 }
