@@ -49,7 +49,7 @@ function showData(actual_JSON){
                 data = "<h3>" + data + "</h3>";
             }
             if (key == "link"){
-                data = "<a src='" + data + "'>" + data + "</a>";
+                data = "<a href='" + data + "'>" + data + "</a>";
             }
             myResult += "<td>" + data + "</td>";
         }
