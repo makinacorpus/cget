@@ -29,13 +29,13 @@ function showData(actual_JSON){
     finalResult += "<tr>";
     my_obj = actual_JSON[0];
     for (var key in my_obj){
-        finalResult += "<th style='width:20%;'>" + key + "</th>"; 
+        finalResult += "<th>" + key + "</th>"; 
     }
     finalResult += "</tr>";
 
     // feeling the table with data
     for (var i in actual_JSON){
-        if(i>=10){break;}
+        if(i>=100){break;}
         obj = actual_JSON[i]
         var myResult = "";
         myResult += "<tr>";
