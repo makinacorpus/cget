@@ -1,6 +1,7 @@
-<script type="text/javascript">
 
- function loadJSON(callback) {   
+var actual_JSON;
+
+function loadJSON(callback) {   
 
     var xobj = new XMLHttpRequest();
         xobj.overrideMimeType("application/json");
@@ -13,8 +14,6 @@
     xobj.send(null);  
  }
 
-var actual_JSON;
-
  function init() {
  loadJSON(function(response) {
     actual_JSON = JSON.parse(response);
@@ -23,15 +22,9 @@ var actual_JSON;
 }
 
 function useJSON(){
-	console.log(actual_JSON[1].title);
+	document.getElementById("data").innerHTML = actual_JSON[1].title;
 }
-
-</script>
-
-<script type="text/javascript">
 
 function makeInner(){
 	document.getElementById("data").innerHTML = "COUCOU from makeInner!";
 }
-
-</script>
