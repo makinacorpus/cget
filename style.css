@@ -7,3 +7,11 @@ td {
 img {
     width: 100px;
 }
+
+.main-content table {
+    word-break: normal;
+}
+
+table, th, td {
+   border: 1px solid black;
+}
