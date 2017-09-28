@@ -56,7 +56,7 @@ function showData(actual_JSON){
             myResult += abstract;
         } 
         myResult += "</td>";
-        myResult += "<td><a href='" + link + "' target='_blank'>Link to the page</a></td>";  
+        myResult += "<td><a href='" + link + "' target='_blank'><img src='https://pixabay.com/photo-1271843/'</img</a></td>";  
 
         myResult += "</tr>";
         
