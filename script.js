@@ -21,8 +21,7 @@ function loadJSON(callback, fileName) {
 }
 
 function showData(actual_JSON){
-    console.log(actual_JSON);
-    console.log("coucou");
+    //console.log(actual_JSON);
     var finalResult = "<table>";
     
     // creating the table header
