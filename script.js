@@ -38,7 +38,7 @@ function showData(actual_JSON){
 
     // filling the table with data
     for (var i in actual_JSON){
-        if(i>=10000){break;} //Limit for tests
+        if(i>=100){break;} //Limit for tests
         obj = actual_JSON[i];
 
         var img = obj.img;

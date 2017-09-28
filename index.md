@@ -7,6 +7,7 @@
 </head>
 <body>
 	<h1>This page is here to check cget data</h1>
+	<h3>Click on a button to see some data</h3>
 	<button onclick="init('veolia')">Veolia</button>
 	<button onclick="init('solidarum')">Solidarum</button>
 	<button onclick="init('vinci')">Vinci</button>
