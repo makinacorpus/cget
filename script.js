@@ -49,7 +49,11 @@ function showData(actual_JSON){
 
         myResult += "<td><img src='" + img + "'></img></td>";
         myResult += "<td><h3>" + title + "</h3><p>" + date + "</p></td>";
-        myResult += "<td>" + abstract + "</td>";
+        myResult += "<td>";
+        if(abstract != null){
+            myResult += abstract;
+        } 
+        myResult += "</td>";
         myResult += "<td><a href='" + link + "'>Link to the page</a></td>";  
 
         myResult += "</tr>";
