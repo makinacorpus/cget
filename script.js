@@ -1,3 +1,4 @@
+//Loading the JSON file
 function loadJSON(callback, fileName) {   
 
     var xobj = new XMLHttpRequest();
@@ -20,6 +21,7 @@ function loadJSON(callback, fileName) {
         fileName);
 }
 
+//Creating the table and filling it with the given json file
 function showData(actual_JSON){
     //console.log(actual_JSON);
     var finalResult = "<table>";
@@ -34,9 +36,9 @@ function showData(actual_JSON){
     
     finalResult += "</tr>";
 
-    // feeling the table with data
+    // filling the table with data
     for (var i in actual_JSON){
-        if(i>=10){break;}
+        if(i>=10000){break;} //Limit for tests
         obj = actual_JSON[i];
 
         var img = obj.img;
