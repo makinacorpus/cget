@@ -9,6 +9,7 @@ img {
 }
 
 .main-content table {
+    width: 1000px;
     word-break: normal;
 }
 
