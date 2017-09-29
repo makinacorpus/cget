@@ -11,6 +11,7 @@
 	<button onclick="init('veolia')">Veolia</button>
 	<button onclick="init('solidarum')">Solidarum</button>
 	<button onclick="init('vinci')">Vinci</button>
+	<button onclick="init('carasso')">Carasso</button>
 	<div id="data"></div>
 </body>
 </html>
