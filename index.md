@@ -14,7 +14,7 @@
 		<option value="vinci">Vinci</option>
 		<option value="carasso">Carasso</option>
 		<option value="apriles">Apriles</option>
-		<option value="bretagne_solidare">Bretagne Creative</option>
+		<option value="bretagne_solidaire">Bretagne Creative</option>
 	</select>
 	<div id="data"></div>
 </body>
