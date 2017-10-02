@@ -50,7 +50,11 @@ function showData(actual_JSON){
         var myResult = "<tr>"; 
 
         myResult += "<td><img src='" + img + "'></img></td>";
-        myResult += "<td><h3>" + title + "</h3><p>" + date + "</p></td>";
+        myResult += "<td><h3>" + title + "</h3><p>";
+        if(date != null){
+            myResult += date;
+        }  
+        myResult += "</p></td>";
         myResult += "<td>";
         if(abstract != null){
             myResult += abstract;
