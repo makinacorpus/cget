@@ -17,6 +17,7 @@
 		<option value="apriles">Apriles</option>
 		<option value="bretagne_solidaire">Bretagne Creative</option>
 		<option value="unccas">Unccas</option>
+		<option value="reseaurural">Reseau rural</option>
 	</select>
 	<div id="data"></div>
 </body>
