@@ -20,7 +20,7 @@
 		<option value="reseaurural">Reseau rural</option>
 		<option value="avise">Avise</option>
 	</select>
-	<div id="data"></div>
+	<div id="data">
 	<table>	
 		<tr>
 	    	<th>Image</th>
@@ -37,5 +37,6 @@
 		    <th>Video</th>
 		</tr>
 	</table>
+	</div>
 </body>
 </html>
