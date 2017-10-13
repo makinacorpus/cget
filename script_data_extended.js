@@ -39,8 +39,7 @@ function showData(actual_JSON){
     finalResult += "<th>State (finnished)</th>"; 
     finalResult += "<th>Project holder</th>"; 
     finalResult += "<th>Partner</th>"; 
-    finalResult += "<th>Economic model</th>"; 
-    finalResult += "<th>Video</th>"; 
+    finalResult += "<th>Economic model</th>";
     
     finalResult += "</tr>";
 
