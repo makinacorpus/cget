@@ -3,11 +3,7 @@ function loadJSON(callback, fileName) {
 
     var xobj = new XMLHttpRequest();
         xobj.overrideMimeType("application/json");
-<<<<<<< HEAD
-    xobj.open('GET', 'data_extended/solidarum.json', true); 
-=======
-    xobj.open('GET', 'solidarum.json', true); 
->>>>>>> b21b0276d36139b6a7334057c81621fc752b1174
+    xobj.open('GET', './data_extended/'.concat(fileName.concat('.json')), true); 
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == "200") {
             callback(xobj.responseText);
