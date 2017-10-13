@@ -29,6 +29,10 @@ table, th, td {
    border: 1px solid black;
 }
 
+td, th {
+    max-width: 10%;
+}
+
 #titles {
     margin: 0 auto;
 }
