@@ -31,9 +31,8 @@ function showData(actual_JSON){
     finalResult += "<tr>";
     
     finalResult += "<th>Image</th>";
-    finalResult += "<th>Title / Date</th>";
+    finalResult += "<th>Title / Date / Link</th>";
     finalResult += "<th>Abstract</th>";
-    finalResult += "<th>Link</th>"; 
     finalResult += "<th>Area</th>"; 
     finalResult += "<th>Key words</th>"; 
     finalResult += "<th>Contact</th>"; 
@@ -52,14 +51,13 @@ function showData(actual_JSON){
         
         var myResult = "<tr>"; 
 
-        myResult += "<td><img src='" + obj.img + "'></img></td>";
-        myResult += "<td><h3>" + obj.title + "</h3><p>";
+        myResult += "<td><img src='" + obj.img + "'></img><a href='" + obj.video + "' target='_blank'>" + obj.video + "</a></td>";
+        myResult += "<td><a href='" + obj.link + "' target='_blank'><h3>" + obj.title + "</h3></a><p>";
         if(obj.date != null){
             myResult += obj.date;
         }  
         myResult += "</p></td>";
-        myResult += addDataIfExists(obj.abstract);
-        myResult += "<td><a href='" + obj.link + "' target='_blank'><img src='link.png'</img</a></td>";  
+        myResult += addDataIfExists(obj.abstract); 
 
         myResult += addDataIfExists(obj.area);
         myResult += addDataIfExists(obj.key_words);
@@ -68,7 +66,6 @@ function showData(actual_JSON){
         myResult += addDataIfExists(obj.project_holder);
         myResult += addDataIfExists(obj.partner);
         myResult += addDataIfExists(obj.economic);
-        myResult += addDataIfExists(obj.video);
 
         myResult += "</tr>";
         
