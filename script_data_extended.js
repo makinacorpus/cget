@@ -86,8 +86,14 @@ function addDataIfExists(data){
     var result;
     result = "<td>";
         if(data != null){
+            if(data.length > 100){
+                data = data.substring(0, 100);
+                data += "(...)";
+            }
             result += data;
         } 
     result += "</td>";
     return result
 }
+
+
