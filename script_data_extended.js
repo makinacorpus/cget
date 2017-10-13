@@ -13,7 +13,7 @@ function loadJSON(callback, fileName) {
  }
 
  function init(fileName) {
-    console.log("In script_data_extended.js");
+    //console.log("In script_data_extended.js");
     loadJSON(function(response) {
         var actual_JSON = {"not":"defined"};
         actual_JSON = JSON.parse(response);
@@ -24,7 +24,7 @@ function loadJSON(callback, fileName) {
 
 //Creating the table and filling it with the given json file
 function showData(actual_JSON){
-    console.log(actual_JSON);
+    //console.log(actual_JSON);
     var finalResult = "<table>";
     
     // creating the table header
@@ -65,14 +65,14 @@ function showData(actual_JSON){
         myResult += "</td>";
         myResult += "<td><a href='" + obj.link + "' target='_blank'><img src='link.png'</img</a></td>";  
 
-        myResult += addDataIfExists(obj.area);
-        myResult += addDataIfExists(obj.key_words);
-        myResult += addDataIfExists(obj.contact);
-        myResult += addDataIfExists(obj.state);
-        myResult += addDataIfExists(obj.project_holder);
-        myResult += addDataIfExists(obj.partner);
-        myResult += addDataIfExists(obj.economic);
-        myResult += addDataIfExists(obj.video);
+        myResult += obj.area;
+        myResult += obj.key_words;
+        myResult += obj.contact;
+        myResult += obj.state;
+        myResult += obj.project_holder;
+        myResult += obj.partner;
+        myResult += obj.economic;
+        myResult += obj.video;
 
         myResult += "</tr>";
         
