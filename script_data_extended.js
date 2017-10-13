@@ -3,7 +3,11 @@ function loadJSON(callback, fileName) {
 
     var xobj = new XMLHttpRequest();
         xobj.overrideMimeType("application/json");
+<<<<<<< HEAD
     xobj.open('GET', 'data_extended/solidarum.json', true); 
+=======
+    xobj.open('GET', 'solidarum.json', true); 
+>>>>>>> b21b0276d36139b6a7334057c81621fc752b1174
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == "200") {
             callback(xobj.responseText);
@@ -13,6 +17,7 @@ function loadJSON(callback, fileName) {
  }
 
  function init(fileName) {
+    console.log("In script_data_extended.js");
     loadJSON(function(response) {
         var actual_JSON = {"not":"defined"};
         actual_JSON = JSON.parse(response);
@@ -23,7 +28,7 @@ function loadJSON(callback, fileName) {
 
 //Creating the table and filling it with the given json file
 function showData(actual_JSON){
-    //console.log(actual_JSON);
+    console.log(actual_JSON);
     var finalResult = "<table>";
     
     // creating the table header
@@ -88,6 +93,7 @@ function showData(actual_JSON){
 }
 
 function addDataIfExists(data){
+    var result;
     result += "<td>";
         if(data != null){
             result += data;
