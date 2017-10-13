@@ -31,7 +31,7 @@ function showData(actual_JSON){
     finalResult += "<tr>";
     
     finalResult += "<th>Image</th>";
-    finalResult += "<th>Title</th>";
+    finalResult += "<th>Title / Date</th>";
     finalResult += "<th>Abstract</th>";
     finalResult += "<th>Link</th>"; 
     finalResult += "<th>Area</th>"; 
