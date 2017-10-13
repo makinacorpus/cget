@@ -89,6 +89,7 @@ function showData(actual_JSON){
 }
 
 function addDataIfExists(data){
+    var result;
     result += "<td>";
         if(data != null){
             result += data;
