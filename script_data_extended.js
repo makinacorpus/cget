@@ -3,7 +3,7 @@ function loadJSON(callback, fileName) {
 
     var xobj = new XMLHttpRequest();
         xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'data_extended/' + fileName.concat('.json'), true); 
+    xobj.open('GET', 'data_extended/'.concat(fileName.concat('.json')), true); 
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == "200") {
             callback(xobj.responseText);
