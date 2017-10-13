@@ -71,14 +71,14 @@ function showData(actual_JSON){
         myResult += "</td>";
         myResult += "<td><a href='" + link + "' target='_blank'><img src='link.png'</img</a></td>";  
 
-        myResult += addDataIfExists(obj.area);
-        myResult += addDataIfExists(obj.key_words);
-        myResult += addDataIfExists(obj.contact);
-        myResult += addDataIfExists(obj.state);
-        myResult += addDataIfExists(obj.project_holder);
-        myResult += addDataIfExists(obj.partner);
-        myResult += addDataIfExists(obj.economic);
-        myResult += addDataIfExists(obj.video);
+        myResult += obj.area;
+        myResult += obj.key_words;
+        myResult += obj.contact;
+        myResult += obj.state;
+        myResult += obj.project_holder;
+        myResult += obj.partner;
+        myResult += obj.economic;
+        myResult += obj.video;
 
         myResult += "</tr>";
         
