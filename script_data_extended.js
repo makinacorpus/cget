@@ -89,4 +89,16 @@ function addDataIfExists(data){
     return result
 }
 
+function addListIfExists(data){
+    var result;
+    result = "<td>";
+        if(data != null){
+            for (var i=0; i < data.length; i++) {
+                result += data[i] + "</br>";
+            }
+        } 
+    result += "</td>";
+    return result
+}
+
 
