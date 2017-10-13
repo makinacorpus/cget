@@ -6,7 +6,7 @@
 	<title>CGET data page</title>
 </head>
 <body>
-	<div id="titles>
+	<div id="titles">
 		<h1>This page is here to check cget data</h1>
 		<h3>Choose an option to see some data</h3>
 		<select onchange="init(this.options[this.selectedIndex].value);" 
