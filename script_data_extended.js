@@ -47,29 +47,23 @@ function showData(actual_JSON){
 
     // filling the table with data
     for (var i in actual_JSON){
-        if(i>=100){break;} //Limit for tests
+        if(i>=10){break;} //Limit for tests
         obj = actual_JSON[i];
-
-        var img = obj.img;
-        var title = obj.title;
-        var link = obj.link;
-        var abstract = obj.abstract;
-        var date = obj.date;
         
         var myResult = "<tr>"; 
 
-        myResult += "<td><img src='" + img + "'></img></td>";
-        myResult += "<td><h3>" + title + "</h3><p>";
-        if(date != null){
-            myResult += date;
+        myResult += "<td><img src='" + obj.img + "'></img></td>";
+        myResult += "<td><h3>" + obj.title + "</h3><p>";
+        if(obj.date != null){
+            myResult += obj.date;
         }  
         myResult += "</p></td>";
         myResult += "<td>";
-        if(abstract != null){
-            myResult += abstract;
+        if(obj.abstract != null){
+            myResult += obj.abstract;
         } 
         myResult += "</td>";
-        myResult += "<td><a href='" + link + "' target='_blank'><img src='link.png'</img</a></td>";  
+        myResult += "<td><a href='" + obj.link + "' target='_blank'><img src='link.png'</img</a></td>";  
 
         myResult += addDataIfExists(obj.area);
         myResult += addDataIfExists(obj.key_words);
