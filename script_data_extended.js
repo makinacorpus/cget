@@ -56,7 +56,7 @@ function showData(actual_JSON){
             myResult += obj.date;
         }  
         myResult += "</p></td>";
-        myResult += addDataIfExists(obj.abstract); 
+        myResult += addListIfExists(obj.abstract); 
 
         myResult += addDataIfExists(obj.area);
         myResult += addDataIfExists(obj.key_words);
