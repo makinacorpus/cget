@@ -58,11 +58,7 @@ function showData(actual_JSON){
             myResult += obj.date;
         }  
         myResult += "</p></td>";
-        myResult += "<td>";
-        if(obj.abstract != null){
-            myResult += obj.abstract;
-        } 
-        myResult += "</td>";
+        myResult += addDataIfExists(obj.abstract);
         myResult += "<td><a href='" + obj.link + "' target='_blank'><img src='link.png'</img</a></td>";  
 
         myResult += addDataIfExists(obj.area);
