@@ -28,3 +28,14 @@ a img {
 table, th, td {
    border: 1px solid black;
 }
+
+#titles {
+    margin: 0 auto;
+}
+
+.main-content {
+    max-width: 100%;
+    padding: 2rem 6rem;
+    margin: 0;
+    font-size: 1.1rem;
+}
