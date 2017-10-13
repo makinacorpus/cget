@@ -6,20 +6,22 @@
 	<title>CGET data page</title>
 </head>
 <body>
-	<h1>This page is here to check cget data</h1>
-	<h3>Choose an option to see some data</h3>
-	<select onchange="init(this.options[this.selectedIndex].value);" 
-			onload="init(this.options[0].value);">
-		<!--<option value="veolia">Veolia</option>-->
-		<option value="solidarum">Solidarum</option>
-		<!--<option value="vinci">Vinci</option>-->
-		<!--<option value="carasso">Carasso</option>-->
-		<!--<option value="apriles">Apriles</option>-->
-		<option value="bretagne">Bretagne Creative</option>
-		<!--<option value="unccas">Unccas</option>-->
-		<option value="reseaurural">Reseau rural</option>
-		<option value="avise">Avise</option>
-	</select>
+	<div id="titles>
+		<h1>This page is here to check cget data</h1>
+		<h3>Choose an option to see some data</h3>
+		<select onchange="init(this.options[this.selectedIndex].value);" 
+				onload="init(this.options[0].value);">
+			<!--<option value="veolia">Veolia</option>-->
+			<option value="solidarum">Solidarum</option>
+			<!--<option value="vinci">Vinci</option>-->
+			<!--<option value="carasso">Carasso</option>-->
+			<!--<option value="apriles">Apriles</option>-->
+			<option value="bretagne">Bretagne Creative</option>
+			<!--<option value="unccas">Unccas</option>-->
+			<option value="reseaurural">Reseau rural</option>
+			<option value="avise">Avise</option>
+		</select>
+	</div>
 	<div id="data"></div>
 </body>
 </html>
