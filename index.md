@@ -30,7 +30,7 @@
 		    <th>Area</th>
 		    <th>Key words</th> 
 		    <th>Contact</th>
-		    <th>State (finnished)</th>"; 
+		    <th>State (finnished)</th>
 		    <th>Project holder</th>
 		    <th>Partner</th> 
 		    <th>Economic model</th>
