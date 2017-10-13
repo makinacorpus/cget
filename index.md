@@ -20,23 +20,6 @@
 		<option value="reseaurural">Reseau rural</option>
 		<option value="avise">Avise</option>
 	</select>
-	<div id="data">
-	<table>	
-		<tr>
-	    	<th>Image</th>
-		    <th>Title</th>
-		    <th>Abstract</th>
-		    <th>Link</th>
-		    <th>Area</th>
-		    <th>Key words</th> 
-		    <th>Contact</th>
-		    <th>State (finnished)</th>
-		    <th>Project holder</th>
-		    <th>Partner</th> 
-		    <th>Economic model</th>
-		    <th>Video</th>
-		</tr>
-	</table>
-	</div>
+	<div id="data"></div>
 </body>
 </html>
