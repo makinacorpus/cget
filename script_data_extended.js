@@ -13,7 +13,7 @@ function loadJSON(callback, fileName) {
  }
 
  function init(fileName) {
-    console.log("In script_data_extended.js");
+    //console.log("In script_data_extended.js");
     loadJSON(function(response) {
         var actual_JSON = {"not":"defined"};
         actual_JSON = JSON.parse(response);
@@ -24,7 +24,7 @@ function loadJSON(callback, fileName) {
 
 //Creating the table and filling it with the given json file
 function showData(actual_JSON){
-    console.log(actual_JSON);
+    //console.log(actual_JSON);
     var finalResult = "<table>";
     
     // creating the table header
