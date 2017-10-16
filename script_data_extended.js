@@ -30,7 +30,7 @@ function showData(actual_JSON){
     // creating the table header
     finalResult += "<tr>";
     
-    finalResult += "<th>Image</th>";
+    finalResult += "<th>Image / Video</th>";
     finalResult += "<th>Title / Date / Link</th>";
     finalResult += "<th>Abstract</th>";
     finalResult += "<th>Area</th>"; 
