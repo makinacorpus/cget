@@ -20,6 +20,7 @@
 			<!--<option value="unccas">Unccas</option>-->
 			<option value="reseaurural">Reseau rural</option>
 			<option value="avise">Avise</option>
+			<option value="semeoz">Semeoz</option>
 		</select>
 	</div>
 	<div id="data"></div>
