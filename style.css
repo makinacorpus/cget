@@ -1,10 +1,6 @@
 td {  
     text-align: center;
  	table-layout: fixed; 
- 	white-space: nowrap;
-  	overflow: hidden;
-  	text-overflow: ellipsis; 
-  	width: 10%;
 }
 
 img {
@@ -48,8 +44,3 @@ td, th {
     font-size: 1.1rem;
 }
 
-table {
-  table-layout: fixed;
-  width: 100%;
-  white-space: nowrap;
-}
