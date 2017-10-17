@@ -11,7 +11,7 @@
 		<h3>Choose an option to see some data</h3>
 		<select onchange="init(this.options[this.selectedIndex].value);" 
 				onload="init(this.options[0].value);">
-			<!--<option value="veolia">Veolia</option>-->
+			<option value="veolia">Veolia</option>
 			<option value="solidarum">Solidarum</option>
 			<option value="vinci">Vinci</option>
 			<!--<option value="carasso">Carasso</option>-->
