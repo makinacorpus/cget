@@ -80,11 +80,16 @@ function addDataIfExists(data){
     var result;
     result = "<td>";
         if(data != null){
-            if(data.length > 100){
-                data = data.substring(0, 100);
-                data += "(...)";
+            if(typeof data != "string"){
+                result += addListIfExists(data);
             }
-            result += data;
+            else{
+                if(data.length > 100){
+                    data = data.substring(0, 100);
+                    data += "(...)";
+                }
+                result += data;
+            }
         } 
     result += "</td>";
     return result
@@ -92,18 +97,15 @@ function addDataIfExists(data){
 
 function addListIfExists(data){
     var result;
-    result = "<td>";
-        if(data != null){
-            for (var i=0; i < data.length; i++) {
-                my_data = data[i]; 
-                if(my_data.length > 40){
-                    my_data = my_data.substring(0, 40);
-                    my_data += "(...)";
-                }
-                result += my_data + "</br>";
-            }
-        } 
-    result += "</td>";
+    var my_data
+    for (var i=0; i < data.length; i++) {
+        my_data = data[i]; 
+        if(my_data.length > 40){
+            my_data = my_data.substring(0, 40);
+            my_data += "(...)";
+        }
+        result += my_data + "</br>";
+    }
     return result
 }
 
