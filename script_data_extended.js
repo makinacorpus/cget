@@ -95,7 +95,12 @@ function addListIfExists(data){
     result = "<td>";
         if(data != null){
             for (var i=0; i < data.length; i++) {
-                result += data[i] + "</br>";
+                my_data = data[i], 
+                if(my_data.length > 20){
+                    my_data = my_data.substring(0, 20);
+                    my_data += "(...)";
+                }
+                result += my_data + "</br>";
             }
         } 
     result += "</td>";
