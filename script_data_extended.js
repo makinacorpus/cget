@@ -65,7 +65,7 @@ function showData(actual_JSON){
         myResult += addDataIfExists(obj.contact);
         myResult += addDataIfExists(obj.state);
         myResult += addDataIfExists(obj.project_holder);
-        myResult += addDataIfExists(obj.partner);
+        myResult += addListIfExists(obj.partner);
         myResult += addDataIfExists(obj.economic);
 
         myResult += "</tr>";
@@ -96,8 +96,8 @@ function addListIfExists(data){
         if(data != null){
             for (var i=0; i < data.length; i++) {
                 my_data = data[i]; 
-                if(my_data.length > 20){
-                    my_data = my_data.substring(0, 20);
+                if(my_data.length > 40){
+                    my_data = my_data.substring(0, 40);
                     my_data += "(...)";
                 }
                 result += my_data + "</br>";
