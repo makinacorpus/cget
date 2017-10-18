@@ -61,11 +61,11 @@ function showData(actual_JSON){
         myResult += addDataIfExists(obj.abstract); 
 
         myResult += addDataIfExists(obj.area);
-        myResult += addListIfExists(obj.key_words);
+        myResult += addDataIfExists(obj.key_words);
         myResult += addDataIfExists(obj.contact);
         myResult += addDataIfExists(obj.state);
         myResult += addDataIfExists(obj.project_holder);
-        myResult += addListIfExists(obj.partner);
+        myResult += addDataIfExists(obj.partner);
         myResult += addDataIfExists(obj.economic);
 
         myResult += "</tr>";
