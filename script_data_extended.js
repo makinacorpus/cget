@@ -98,7 +98,10 @@ function addDataIfExists(data){
 function addListIfExists(data){
     var result = "";
     var my_data = "";
-    for (var i=0; i < 5; i++) {
+    for (var i=0; i < data.length; i++) {
+        if (i >= 5){
+            break;
+        }
         my_data = data[i]; 
         if(my_data.length > 40){
             my_data = my_data.substring(0, 40);
