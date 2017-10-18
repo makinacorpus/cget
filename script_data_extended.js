@@ -109,7 +109,7 @@ function addListIfExists(data){
         }
         result += my_data + "</br>";
     }
-    if (data.length >= i){
+    if (data.length > i){
         result += "(" + (data.length - i) + " more)"
     }
     return result
