@@ -21,6 +21,7 @@
 			<option value="reseaurural">Reseau rural</option>
 			<option value="avise">Avise</option>
 			<option value="semeoz">Semeoz</option>
+			<option value="ag2r">Ag2r lamondiale</option>
 		</select>
 	</div>
 	<div id="data"></div>
