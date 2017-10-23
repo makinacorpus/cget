@@ -52,7 +52,11 @@ function showData(actual_JSON){
         if (obj.video == null) {
             obj.video = "";
         }
-        myResult += "<td><img src='" + obj.img + "'></img><a href='" + obj.video + "' target='_blank'>" + obj.video + "</a></td>";
+        myResult += "<td>";
+        if(obj.img != null){
+            myResult += "<img src='" + obj.img + "'></img>";
+        }
+        myResult += "<a href='" + obj.video + "' target='_blank'>" + obj.video + "</a></td>";
         myResult += "<td><a href='" + obj.link + "' target='_blank'><h3>" + obj.title + "</h3></a><p>";
         if(obj.date != null){
             myResult += obj.date;
