@@ -22,6 +22,7 @@
 			<option value="avise">Avise</option>
 			<option value="semeoz">Semeoz</option>
 			<option value="ag2r">Ag2r lamondiale</option>
+			<option value="villesinternet">Villes internet</option>
 		</select>
 	</div>
 	<div id="data"></div>
