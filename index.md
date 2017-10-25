@@ -24,6 +24,7 @@
 			<option value="ag2r">Ag2r lamondiale</option>
 			<option value="villesinternet">Villes internet</option>
 			<option value="europeenfrance">Europe en France</option>
+			<option value="lelaboess">Lelabo-ess</option>
 		</select>
 	</div>
 	<div id="data"></div>
