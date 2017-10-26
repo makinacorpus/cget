@@ -57,7 +57,7 @@ function showData(actual_JSON){
             myResult += "<img src='" + obj.img + "'></img>";
         }
         
-        if(obj.video != null){
+        if(obj.video != null && obj.video != ""){
             myResult += "<a href='" + obj.video + "' target='_blank'>Video</a>";
         }
         myResult += "</td>"
