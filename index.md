@@ -25,6 +25,7 @@
 			<option value="villesinternet">Villes internet</option>
 			<option value="europeenfrance">Europe en France</option>
 			<option value="lelaboess">Lelabo-ess</option>
+			<option value="socialementresponsable">Socialement responsable</option>
 		</select>
 	</div>
 	<div id="data"></div>
