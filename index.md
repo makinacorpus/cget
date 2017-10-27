@@ -27,6 +27,7 @@
 			<option value="lelaboess">Lelabo-ess</option>
 			<option value="socialementresponsable">Socialement responsable</option>
 			<option value="rtes">Rtes</option>
+			<option value="socialplanet">Social planet</option>
 		</select>
 	</div>
 	<div id="data"></div>
